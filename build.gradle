@@ -1,0 +1,28 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.30'
+}
+
+group 'com.zp4rker'
+version '1.0.0-dev'
+
+ext {
+    appName = "test-game"
+    gdxVersion = '1.9.14'
+    roboVMVersion = '2.3.12'
+    box2DLightsVersion = '1.5'
+    ashleyVersion = '1.7.3'
+    aiVersion = '1.8.2'
+    gdxControllersVersion = '2.1.0'
+}
+
+repositories {
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    api "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+    api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+    api "com.badlogicgames.gdx:gdx:$gdxVersion"
+}
